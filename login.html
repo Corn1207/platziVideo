@@ -4,9 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Login</title>
 </head>
 <body>
-  
+  <header class="header">
+    <img class="header__img" src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="Platzi Logo">
+  </header>
+  <main class="login">
+    <section class="login__container">
+      <h2>Login</h2>
+      <form class="login__container--form" action="">
+        <input class="input" type="text" placeholder="Email">
+        <input class="input" type="password" placeholder="Password">
+        <button class="button">Sign In</button>
+        <div class="login__container--remember-me">
+          <label>
+            <input  type="checkbox" id="cbox1" value="Checkbox"> Remember me
+          </label>
+          <a href="/">Forgot my password</a>
+        </div>
+      </form>
+      <section class="login__container--social-media">
+        <div>
+          <img src="./img/icon/SeekPng.com_google-photos-png_7887426.png" alt="Google"> Sign up with Google
+        </div>
+        <div>
+          <img src="./img/icon/pngaaa.com-1277234.png" alt="Twitter"> Sign up with Twitter
+        </div>
+      </section>
+      <p class="login__container--register">Don't Have an account? <a href="">Register</a></p>
+    </section>
+  </main>
+  <footer class="footer">
+    <a href="/">Terms and Conditions</a>
+    <a href="/">Privacity Policy</a>
+    <a href="/">Help Center</a>
+  </footer>
 </body>
 </html>
