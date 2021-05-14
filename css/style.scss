@@ -1,4 +1,6 @@
-:root {
+$blanco: white;
+
+:root{
   --purple-background: #8F57FD;
   --green-background: #21C0BB;
 }
@@ -7,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 html {
@@ -56,7 +58,7 @@ body {
 }
 
 .header__menu li a {
-  color: white;
+  color: $blanco;
   text-decoration: none;
 }
 
@@ -72,7 +74,7 @@ body {
 }
 
 .header__menu--profile p {
-  color: white;
+  color: $blanco;
   font-size: 1.6rem;
 }
 
@@ -85,7 +87,7 @@ main {
   width: 100%;
   min-height: calc(100vh - 150px);
   height: auto;
-  background: linear-gradient(#8F57FD, #21C0BB);
+  background: linear-gradient(#8F57FD, #21C0BB);  
 }
 
 .search-section {
@@ -97,16 +99,16 @@ main {
 }
 
 .search-section__title {
-  color: white;
+  color: $blanco;
   font-size: 2.5rem;
   text-align: center;
 }
 
 .search-section input {
-  border: 2px solid white;
+  border: 2px solid $blanco;
   border-radius: 25px;
   width: 70%;
-  color: white;
+  color: $blanco;
   font-size: 1.6rem;
   height: 40px;
   padding-left: 20px;
@@ -116,21 +118,22 @@ main {
 }
 
 .search-section input::placeholder {
-  color: white;
+  color: $blanco;
 }
 
 .carousel {
-  width: 100%;
+  width: 100%;  
   padding: 30px;
+
 }
 
 .carouse-my-list {
-  color: white;
+  color: $blanco;
   font-size: 1.8rem;
 }
 
 .carousel-container {
-  white-space: nowrap;
+  $blanco-space: nowrap;
   margin: 30px 0;
   padding: 55px 0;
   overflow: scroll;
@@ -145,13 +148,13 @@ main {
 }
 
 .carousel-container::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
   border-radius: 10px;
 }
 
 .carousel-container::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
 .carousel-item {
@@ -188,7 +191,7 @@ main {
 }
 
 .carousel-item__details {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0% , rgba(0,0,0,0) 100%);
   font-size: 1rem;
   transition: 450ms opacity;
   padding: 10px;
@@ -197,7 +200,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  color: white;
+  color: $blanco;
 }
 
 .carousel-item__details img {
@@ -216,9 +219,9 @@ main {
 
 .login__container {
   background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid white;
+  border: 2px solid $blanco;
   border-radius: 40px;
-  color: white;
+  color: $blanco;
   padding: 68px 68px 48px;
   min-height: 700px;
   width: 400px;
@@ -238,14 +241,14 @@ main {
 }
 
 .login__container--remember-me {
-  color: white;
+  color: $blanco;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
 .login__container--remember-me a {
-  color: white;
+  color: $blanco;
   font-size: 1.2rem;
   text-decoration: none;
 }
@@ -277,7 +280,7 @@ main {
 }
 
 .login__container--register a {
-  color: white;
+  color: $blanco;
   font-weight: bold;
   font-size: 1.4rem;
   text-decoration: none;
@@ -290,23 +293,23 @@ main {
 .input {
   background-color: transparent;
   border: 0;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid $blanco;
   margin-bottom: 20px;
   padding: 0 10px;
   outline: none;
   height: 40px;
-  color: white;
+  color: $blanco;
   font-size: 1.6rem;
 }
 
 .input::placeholder {
-  color: white;
+  color: $blanco;
 }
 
 .button {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 25px;
-  color: white;
+  color: $blanco;
   cursor: pointer;
   outline: none;
   font-weight: bold;
@@ -327,7 +330,7 @@ main {
 }
 
 .footer a {
-  color: white;
+  color: $blanco;
   text-decoration: none;
   cursor: pointer;
   font-size: 1.4rem;
@@ -340,6 +343,7 @@ main {
 }
 
 /* Page 404 */
+
 .page-not-found-container {
   position: relative;
   display: flex;
@@ -353,12 +357,12 @@ main {
 }
 
 .page-not-found-container h2 {
-  font-size: 10rem;
-  color: white;
+  font-size: 10.0rem;
+  color: $blanco;
 }
 
 .page-not-found-container p {
-  color: white;
+  color: $blanco;
   font-size: 1.4rem;
   text-align: center;
 }
@@ -370,10 +374,12 @@ main {
 }
 
 .page-not-found-container a:hover {
-  text-decoration: underline;
+  text-decoration: underline
+  ;
 }
 
 /* MEDIA QUERYS */
+
 @media only screen and (max-width: 600px) {
   .login__container {
     background-color: transparent;
@@ -385,7 +391,7 @@ main {
   }
 
   .login__container--form {
-    margin: 0;
+    margin: 0;    
   }
 
   .footer {
@@ -393,6 +399,5 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
   }
-}
 
-/*# sourceMappingURL=style.css.map */
+}
